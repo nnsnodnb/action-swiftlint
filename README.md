@@ -65,7 +65,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - uses: nnsnodnb/action-swiftlint@86327886230eee140aaec7f587e319a61cdf4ae7 # v1.0.0
+      - uses: nnsnodnb/action-swiftlint@a353c9762a6c856eac886c6c4f0292e800d6dbb2 # v1.0.0
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
