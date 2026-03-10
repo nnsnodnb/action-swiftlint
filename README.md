@@ -7,7 +7,7 @@
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nnsnodnb/action-swiftlint?logo=github&sort=semver)](https://github.com/nnsnodnb/action-swiftlint/releases)
 [![action-bumpr supported](https://img.shields.io/badge/bumpr-supported-ff69b4?logo=github&link=https://github.com/haya14busa/action-bumpr)](https://github.com/haya14busa/action-bumpr)
 
-![github-pr-review demo](https://github.com/user-attachments/assets/7aae3127-f538-4654-9ef0-64950d25f90f)
+![github-pr-review demo](https://github.com/user-attachments/assets/b0f0e30d-5a58-4cde-8297-45e31800e0b5)
 ![github-pr-check demo](https://github.com/user-attachments/assets/4afd7ae8-47a0-46cc-9b11-c724f07cf68e)
 
 This action runs [SwiftLint](https://github.com/realm/SwiftLint) with [reviewdog](https://github.com/reviewdog/reviewdog) on pull requests to improve code review experience.
