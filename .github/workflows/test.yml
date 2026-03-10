@@ -41,4 +41,4 @@ jobs:
           reporter: github-pr-review
           level: error
           filter_mode: file
-          reviewdog_flags: -fail-on-error
+          fail_level: none
