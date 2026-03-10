@@ -1,0 +1,44 @@
+name: Test
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+jobs:
+  test-check:
+    name: runner / swiftlint (github-check)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+      - uses: ./
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-check
+          level: info
+
+  test-pr-check:
+    if: github.event_name == 'pull_request'
+    name: runner / swiftlint (github-pr-check)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+      - uses: ./
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-check
+          level: warning
+          workdir: ./testdata/subdir/
+
+  test-pr-review:
+    if: github.event_name == 'pull_request'
+    name: runner / swiftlint (github-pr-review)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+      - uses: ./
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
+          level: error
+          filter_mode: file
+          reviewdog_flags: -fail-on-error
