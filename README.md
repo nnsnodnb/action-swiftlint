@@ -1,4 +1,4 @@
-# action-template
+# action-swiftlint
 
 [![Test](https://github.com/nnsnodnb/action-swiftlint/workflows/Test/badge.svg)](https://github.com/nnsnodnb/action-swiftlint/actions?query=workflow%3ATest)
 [![reviewdog](https://github.com/nnsnodnb/action-swiftlint/workflows/reviewdog/badge.svg)](https://github.com/nnsnodnb/action-swiftlint/actions?query=workflow%3Areviewdog)
